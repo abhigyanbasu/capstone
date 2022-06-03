@@ -8,7 +8,7 @@ spec:
   ports:
   - protocol: "TCP"
     port: 6000
-    targetPort: 5000
+    targetPort: 5001
   type: LoadBalancer
 
 ---
@@ -31,4 +31,4 @@ spec:
         image: abhigyanbasu/flaskapp
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 5000
+        - containerPort: 5001
