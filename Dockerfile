@@ -3,7 +3,7 @@ RUN apt-get update && apt-get install python3 python3-pip -y && apt install git 
 #RUN git clone https://github.com/dkumarkaran/flask-sample.git
 
 WORKDIR /app
-COPY ./app
+COPY . /app
 
 ENTRYPOINT  ["python3"]
 
