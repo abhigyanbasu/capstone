@@ -30,6 +30,6 @@ spec:
       containers:
       - name: flask-test-app1
         image: abhigyanbasu/flask-webapp
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: always
         ports:
         - containerPort: 80
